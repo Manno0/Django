@@ -1,19 +1,80 @@
-# Byte-compiled / optimized / DLL files
+# ========================================
+# Python Bytecode / Cache
+# ========================================
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
 
-# Django stuff:
+# ========================================
+# Django
+# ========================================
+# SQLite database
+db.sqlite3
+*.sqlite3
+
+# Django media files (user uploads)
+media/
+
+# Django static files (if using collectstatic locally)
+staticfiles/
+
+# Migrations cache
+*/migrations/__pycache__/
+*/migrations/*.pyc
+
+# Logs
 *.log
 *.pot
-*.pyc
-db.sqlite3
 
-# Virtual environment
+# ========================================
+# Virtual Environments
+# ========================================
 .venv/
-env/
 venv/
+env/
+ENV/
 
-# PyCharm
+# ========================================
+# Environment Variables / Secrets
+# ========================================
+.env
+*.env
+
+# ========================================
+# IDEs / Editors
+# ========================================
+# PyCharm / IntelliJ
 .idea/
-/media/
+*.iml
+*.ipr
+*.iws
+
+# VSCode
+.vscode/
+
+# ========================================
+# OS Generated Files
+# ========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ========================================
+# Others / Temporary
+# ========================================
+*.swp
+*.swo
+*.bak
+*.orig
+*.tmp
