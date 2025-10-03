@@ -16,3 +16,5 @@ venv/
 
 # PyCharm
 .idea/
+/media/
+/static/
