@@ -1,4 +1,8 @@
 from django.http import HttpResponse
+from django.views import View
+from django.shortcuts import render
+
+    
 
 
 def home(request):
@@ -7,6 +11,10 @@ def home(request):
 def not_found(request):
     return HttpResponse("Not found")
 
-from django.shortcuts import render
+class HomeView(View):
+    def get(self, request):
+        return HttpResponse("Welcome to the Home Page!")
 
-# Create your views here.
+class NotFoundView(View):
+    def get(self, request):
+        return HttpResponse("404 Not Found")
